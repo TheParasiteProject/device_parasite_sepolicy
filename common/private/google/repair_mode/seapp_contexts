@@ -1,0 +1,1 @@
+user=system seinfo=platform name=com.google.android.repairmode domain=repair_mode_app type=system_app_data_file levelFrom=user

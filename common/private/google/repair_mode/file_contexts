@@ -1,0 +1,1 @@
+/metadata/repair-mode/config(/.*)?    u:object_r:repair_mode_metadata_config_file:s0

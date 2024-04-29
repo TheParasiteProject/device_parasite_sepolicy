@@ -52,4 +52,8 @@ BOARD_SEPOLICY_DIRS += \
 
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += \
     hardware/google/pixel-sepolicy/turbo_adapter/public
+
+# repair_mode
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
+    device/parasite/sepolicy/common/private/google/repair_mode
 endif
