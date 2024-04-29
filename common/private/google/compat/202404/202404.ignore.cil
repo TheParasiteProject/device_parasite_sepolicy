@@ -7,4 +7,7 @@
   ( new_objects
     pixel_battery_domain
     pixel_battery_service_type
+    repair_mode_metadata_config_file
+    repair_mode_init_prop
+    repair_mode_app
     ))

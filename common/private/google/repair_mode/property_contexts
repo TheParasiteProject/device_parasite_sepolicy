@@ -1,0 +1,2 @@
+# repair mode prop
+repair_mode.init_completed.        u:object_r:repair_mode_init_prop:s0 prefix bool
