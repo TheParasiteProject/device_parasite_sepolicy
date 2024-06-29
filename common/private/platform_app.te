@@ -32,3 +32,6 @@ r_dir_file(platform_app, sysfs_zram)
 
 # Allow platform apps to get settingsdebug.instant.packages prop
 get_prop(platform_app, settingslib_prop)
+
+# Launcher apps read pm.archiving.enabled
+get_prop(platform_app, pm_archiving_enabled_prop)
