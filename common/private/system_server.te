@@ -8,3 +8,6 @@ allow system_server pocket_judge_sysfs:file rw_file_perms;
 
 # Get custom hook prop
 get_prop(system_server, custom_hook_prop)
+
+# Freeform
+add_service(system_server, lmo_freeform_service);

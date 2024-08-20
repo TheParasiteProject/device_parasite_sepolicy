@@ -2,3 +2,6 @@ type custom_globalactions_service, system_api_service, system_server_service, se
 
 # Pocket judge
 type pocket_service, system_api_service, system_server_service, service_manager_type;
+
+# Freeform
+type lmo_freeform_service, system_api_service, system_server_service, service_manager_type;

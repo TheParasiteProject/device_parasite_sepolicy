@@ -2,3 +2,6 @@ customglobalactions                       u:object_r:custom_globalactions_servic
 
 # Pocket judge
 pocket                                    u:object_r:pocket_service:s0
+
+# Freeform
+lmo_freeform                              u:object_r:lmo_freeform_service:s0
