@@ -25,3 +25,9 @@ persist.device_config.tethering.        u:object_r:device_config_tethering_prop:
 
 # SettingsLib
 settingsdebug.instant.packages u:object_r:settingslib_prop:s0
+
+# Custom Hooks
+persist.sys.cfhooks.                   u:object_r:custom_hook_prop:s0
+persist.sys.dchooks.                   u:object_r:custom_hook_prop:s0
+persist.sys.pfhooks.                   u:object_r:custom_hook_prop:s0
+persist.sys.pihooks.                   u:object_r:custom_hook_prop:s0

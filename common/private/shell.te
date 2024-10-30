@@ -1,0 +1,2 @@
+# Allow shell to set Custom Hooks props
+set_prop(shell, custom_hook_prop)

@@ -1,1 +1,4 @@
 allow appdomain zygote:unix_stream_socket getopt;
+
+# Custom Hooks
+get_prop(appdomain, custom_hook_prop)
