@@ -6,3 +6,6 @@ system_restricted_prop(media_wfd_prop)
 
 # Tethering
 system_internal_prop(device_config_tethering_prop)
+
+# Custom Hooks
+system_restricted_prop(custom_hook_prop)
