@@ -7,6 +7,7 @@ init_daemon_domain(cache_cleaner)
 domain_auto_trans(init, shell_exec, cache_cleaner)
 
 allow cache_cleaner cache_cleaner_exec:file { rx_file_perms entrypoint };
+allow cache_cleaner self:capability { fowner };
 
 # Allow cache cleaner to remove caches
 allow cache_cleaner cache_file:dir create_dir_perms;
