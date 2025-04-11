@@ -55,11 +55,19 @@ BOARD_SEPOLICY_DIRS += \
     hardware/google/pixel-sepolicy/googlebattery
 
 # turbo_adapter
-BOARD_SEPOLICY_DIRS += \
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
     hardware/google/pixel-sepolicy/turbo_adapter/private
 
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += \
     hardware/google/pixel-sepolicy/turbo_adapter/public
+
+ifeq ($(TARGET_USES_PREBUILT_VENDOR_SEPOLICY), true)
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
+    hardware/google/pixel-sepolicy/turbo_adapter/vendor
+else
+BOARD_VENDOR_SEPOLICY_DIRS += \
+    hardware/google/pixel-sepolicy/turbo_adapter/vendor
+endif
 endif
 
 # Qcom/MTK
