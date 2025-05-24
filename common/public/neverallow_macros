@@ -10,3 +10,33 @@ define(`no_rw_dir_file', `
 neverallow $1 $2:dir no_r_dir_perms;
 neverallow $1 $2:{ file lnk_file } no_rw_file_perms;
 ')
+
+#####################################
+# no_unix_socket_connect(clientdomain, socket, serverdomain)
+# Neverallow a local socket connection from clientdomain via
+# socket to serverdomain.
+#
+define(`no_unix_socket_connect', `
+neverallow $1 $2_socket:sock_file write;
+neverallow $1 $3:unix_stream_socket connectto;
+')
+
+#####################################
+# no_set_prop(sourcedomain, targetproperty)
+# Neverallows source domain to set the
+# targetproperty.
+#
+define(`no_set_prop', `
+no_unix_socket_connect($1, property, init)
+neverallow $1 $2:property_service set;
+no_get_prop($1, $2)
+')
+
+#####################################
+# no_get_prop(sourcedomain, targetproperty)
+# Neverallows source domain to read the
+# targetproperty.
+#
+define(`no_get_prop', `
+neverallow $1 $2:file { getattr open read map };
+')
