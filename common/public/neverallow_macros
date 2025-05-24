@@ -1,0 +1,12 @@
+#
+# Common neverallow permissions
+define(`no_r_dir_perms',  `{ open getattr read search ioctl lock watch watch_reads }')
+
+#####################################
+# no_rw_dir_file(domain, type)
+# Neverallow the specified domain to read directories and read/write files
+# and symbolic links of the specified type.
+define(`no_rw_dir_file', `
+neverallow $1 $2:dir no_r_dir_perms;
+neverallow $1 $2:{ file lnk_file } no_rw_file_perms;
+')
