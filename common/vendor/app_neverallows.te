@@ -1,0 +1,11 @@
+# Lineage services
+neverallow all_untrusted_apps_only { 
+  hal_lineage_fastcharge_hwservice
+  hal_lineage_livedisplay_hwservice
+  hal_lineage_touch_hwservice
+}:hwservice_manager *;
+
+neverallow all_untrusted_apps_only { 
+  hal_lineage_health_service
+  hal_lineage_powershare_service
+}:service_manager *;

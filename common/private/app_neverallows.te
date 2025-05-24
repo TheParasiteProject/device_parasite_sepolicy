@@ -1,0 +1,9 @@
+# Lineage services
+neverallow all_untrusted_apps_only { 
+  adbroot_service
+  lineage_globalactions_service
+  lineage_hardware_service
+  lineage_health_interface_service
+  lineage_livedisplay_service
+  lineage_trust_service
+}:service_manager *;
