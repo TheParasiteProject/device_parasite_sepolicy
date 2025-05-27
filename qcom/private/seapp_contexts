@@ -1,0 +1,2 @@
+# Add new domain for FM Radio app
+user=system isPrivApp=true seinfo=platform name=com.android.fmradio domain=vendor_fm_app type=app_data_file levelFrom=all
