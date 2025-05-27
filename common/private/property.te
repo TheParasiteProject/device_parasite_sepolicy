@@ -9,3 +9,5 @@ system_internal_prop(device_config_tethering_prop)
 
 # Custom Hooks
 system_restricted_prop(custom_hook_prop)
+dontaudit domain custom_hook_prop:file r_file_perms;
+dontaudit all_untrusted_apps_only custom_hook_prop:file r_file_perms;
