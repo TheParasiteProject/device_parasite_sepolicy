@@ -1,0 +1,2 @@
+# FM
+allow vendor_fm_app vendor_fm_radio_device:chr_file r_file_perms;
