@@ -14,3 +14,6 @@ add_service(system_server, lmo_freeform_service);
 
 # Boost framework
 add_service(system_server, boost_framework_service);
+
+# App Locker
+add_service(system_server, app_lock_service);
