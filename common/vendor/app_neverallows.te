@@ -1,9 +1,5 @@
 # Lineage services
 neverallow all_untrusted_apps_only { 
-  hal_lineage_livedisplay_hwservice
-}:hwservice_manager *;
-
-neverallow all_untrusted_apps_only { 
   hal_lineage_fastcharge
   hal_lineage_health_service
   hal_lineage_powershare_service
