@@ -11,6 +11,10 @@ allow system_server pocket_service:service_manager { add find };
 allow system_server pocket_judge_sysfs:dir search;
 allow system_server pocket_judge_sysfs:file rw_file_perms;
 
+# Webview
+allow system_server webview_zygote:process setsched;
+allow system_server app_zygote:process setsched;
+
 # Get custom hook prop
 get_prop(system_server, custom_hook_prop)
 
