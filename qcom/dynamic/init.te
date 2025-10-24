@@ -1,1 +1,1 @@
-allow init proc_walt:{ file lnk_file } rw_file_perms;
+allow init proc_walt:{ file lnk_file } { setattr rw_file_perms };
