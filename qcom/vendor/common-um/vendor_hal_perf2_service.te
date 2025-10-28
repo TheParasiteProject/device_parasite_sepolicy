@@ -5,6 +5,7 @@ allow {
     platform_app
     priv_app
     system_app
+    system_server
     turbo_adapter
     updater_app
     vendor_dataservice_app
