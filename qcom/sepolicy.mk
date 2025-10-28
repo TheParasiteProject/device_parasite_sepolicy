@@ -12,8 +12,12 @@ endif
 ifeq ($(TARGET_USES_PREBUILT_VENDOR_SEPOLICY), true)
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
     device/parasite/sepolicy/qcom/dynamic \
+    device/parasite/sepolicy/qcom/private \
     device/parasite/sepolicy/qcom/system
 else
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
+    device/parasite/sepolicy/qcom/private
+
 BOARD_VENDOR_SEPOLICY_DIRS += \
     device/parasite/sepolicy/qcom/dynamic \
     device/parasite/sepolicy/qcom/vendor
