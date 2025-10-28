@@ -1,0 +1,13 @@
+allow {
+    gmscore_app
+    mediaprovider_app
+    permissioncontroller_app
+    platform_app
+    priv_app
+    system_app
+    turbo_adapter
+    updater_app
+    vendor_dataservice_app
+    vendor_wfd_app
+    vendor_wlc_app
+} vendor_hal_perf2_service:service_manager { find };
