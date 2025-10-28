@@ -1,0 +1,14 @@
+allow {
+    gmscore_app
+    mediaprovider_app
+    permissioncontroller_app
+    platform_app
+    priv_app
+    system_app
+    turbo_adapter
+    updater_app
+    vendor_wlc_app
+    vendor_dataservice_app
+} vendor_perf_service:service_manager { find };
+
+dontaudit rkpdapp vendor_perf_service:service_manager { find };
