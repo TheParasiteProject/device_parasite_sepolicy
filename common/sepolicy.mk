@@ -35,7 +35,7 @@ endif
 # Pixel common
 TARGET_INCLUDE_PIXEL_SEPOLICY ?= true
 ifeq ($(TARGET_INCLUDE_PIXEL_SEPOLICY), true)
-BOARD_SEPOLICY_DIRS += \
+BOARD_VENDOR_SEPOLICY_DIRS += \
     device/parasite/sepolicy/common/private/google
 
 ifeq ($(TARGET_USES_PREBUILT_VENDOR_SEPOLICY), true)
@@ -47,11 +47,11 @@ BOARD_VENDOR_SEPOLICY_DIRS += \
 endif
 
 # Flipendo
-BOARD_SEPOLICY_DIRS += \
+BOARD_VENDOR_SEPOLICY_DIRS += \
     hardware/google/pixel-sepolicy/flipendo
 
 # google_battery service
-BOARD_SEPOLICY_DIRS += \
+BOARD_VENDOR_SEPOLICY_DIRS += \
     hardware/google/pixel-sepolicy/googlebattery
 
 # turbo_adapter
