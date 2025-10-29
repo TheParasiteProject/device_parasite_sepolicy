@@ -23,6 +23,9 @@ BOARD_VENDOR_SEPOLICY_DIRS += \
     device/parasite/sepolicy/qcom/vendor
 endif
 
+SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += \
+    device/parasite/sepolicy/qcom/public
+
 ifneq ($(SEPOLICY_PLATFORM), legacy-um)
 BOARD_VENDOR_SEPOLICY_DIRS += \
     device/parasite/sepolicy/qcom/vendor/common-um
