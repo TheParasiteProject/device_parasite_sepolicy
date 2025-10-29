@@ -1,4 +1,5 @@
 allow {
+    flipendo
     gmscore_app
     platform_app
     priv_app
