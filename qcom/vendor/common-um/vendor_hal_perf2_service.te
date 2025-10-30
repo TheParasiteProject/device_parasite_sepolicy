@@ -8,4 +8,5 @@ allow {
     turbo_adapter
     vendor_dataservice_app
     vendor_wfd_app
+    vendor_perfservice
 } vendor_hal_perf2_service:service_manager { find };
